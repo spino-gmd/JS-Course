@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+    </body>
+
+    <script>
+        var nome = String(prompt('Qual é o seu nome?'))
+        document.write(`Olá ${nome}, seu nome tem ${nome.length} letras.` + `<br>`) // <br> é pulada de linha
+        var idade = Number(prompt(`Qual é a sua idade? ${nome}`))
+        document.write(`Você tem ${idade} anos` + `<br>`)
+
+        var cash1 = Number(prompt('Quanto dinheiro você tem?'))
+        cash1.toFixed(2) // 2 casas decimais
+        var cash2 = cash1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) // coloca em R$ XX,YY
+        document.write(`Você tem ${cash2}` + `<br>`)
+    </script>
+    </html>
