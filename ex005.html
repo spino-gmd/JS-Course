@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <p>olá</p> <!--0-->
+        <p id="second-paragraph"><strong>oi</strong></p> <!--1-->
+    </body>
+
+    <script>
+    var p1 = document.getElementsByTagName('p')[0] // vai com base na ordem que aparece
+    var p2 = document.getElementById('second-paragraph')
+    
+    p1.style.color = 'blue'
+
+    document.write('No 1o parágrafo está escrito: '+ p1.innerText + '<br>')
+    document.write('No 2o parágrafo está escrito: '+ p2.innerHTML) // innerHTML pega o texto com a formatação
+    
+    var b = document.body
+    b.style.background = 'cyan'
+
+    </script>
+    </html>
